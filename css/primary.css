@@ -1,0 +1,137 @@
+/* Подключение шрифта из папки */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/raleway/raleway-v18-latin-700.eot");
+  src: local(""),
+    url("../fonts/raleway/raleway-v18-latin-700.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/raleway/raleway-v18-latin-700.woff2") format("woff2"),
+    url("../fonts/raleway/raleway-v18-latin-700.woff") format("woff"),
+    url("../fonts/raleway/raleway-v18-latin-700.ttf") format("truetype"),
+    url("../fonts/raleway/raleway-v18-latin-700.svg#Raleway") format("svg");
+}
+
+/* Палитра цветов */
+:root {
+  --main-color: #757575;
+  --heading-color: #212121;
+  --active-color: #2196f3;
+  --secondary-color: #ffffff;
+  --footer-color: rgba(255, 255, 255, 0.6);
+  --background: #2f303a;
+  --light-background: #f5f4fa;
+}
+
+/* Основные стили */
+body {
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* Типография */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+}
+
+/* Логотип шапки*/
+.logo-head {
+  color: var(--heading-color);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo-blue {
+  color: var(--active-color);
+}
+
+/* Логотип футера */
+.logo-foot {
+  color: var(--secondary-color);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+/* Убрать подчёркивания у ссылок */
+.link {
+  text-decoration: none;
+}
+
+/* Убрать маркировку списков */
+.list {
+  list-style: none;
+}
+
+/* Стили для шапки */
+.headnav .link {
+  color: var(--heading-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.headnav .link:hover,
+.headnav .link:focus {
+  color: var(--active-color);
+}
+
+.contacts .link {
+  color: var(--main-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--active-color);
+}
+
+.headnav .current {
+  color: var(--active-color);
+}
+
+/* Стили для подвала */
+.footer-box {
+  background-color: var(--background);
+}
+
+.address {
+  color: var(--secondary-color);
+}
+
+.info {
+  color: var(--footer-color);
+}
+
+/* Стили для адреса в футере */
+.footer-box .list {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.address:hover,
+.address:focus,
+.info:hover,
+.info:focus {
+  color: var(--active-color);
+}

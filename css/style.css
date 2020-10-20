@@ -1,0 +1,106 @@
+/* Стили для первой страницы */
+.hero {
+  background-color: var(--background);
+}
+
+/* Стиль перевого заголовка в герое */
+.hero h1 {
+  color: var(--secondary-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Стилизация кнопки в герое */
+.hero .button {
+  font-family: "Roboto", sans-serif;
+  color: var(--secondary-color);
+  background-color: var(--active-color);
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+
+.hero .position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Стили заголовков №2 */
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Стиль заголовкам раздела особенности */
+.features h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* Стили для раздела наша команда */
+.team h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team p {
+  color: var(--main-color);
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Стили для второй страницы - портфолио */
+
+/* Стили для списка кнопок фильтра */
+.filter .button {
+  font-family: "Roboto", sans-serif;
+  color: var(--heading-color);
+  background-color: var(--light-background);
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.filter .button:hover,
+.filter .button:focus {
+  color: var(--secondary-color);
+  background-color: var(--active-color);
+  border: none;
+}
+
+/* Стили для секции проекты */
+.projects h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.projects p {
+  color: var(--main-color);
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
