@@ -1,16 +1,23 @@
 /* Подключение шрифта из папки */
 @font-face {
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/raleway/raleway-v18-latin-700.eot");
-  src: local(""),
-    url("../fonts/raleway/raleway-v18-latin-700.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/raleway/raleway-v18-latin-700.woff2") format("woff2"),
-    url("../fonts/raleway/raleway-v18-latin-700.woff") format("woff"),
-    url("../fonts/raleway/raleway-v18-latin-700.ttf") format("truetype"),
-    url("../fonts/raleway/raleway-v18-latin-700.svg#Raleway") format("svg");
+  src: url('../fonts/raleway/raleway-v18-latin-700.eot');
+  src: local(''),
+    url('../fonts/raleway/raleway-v18-latin-700.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/raleway/raleway-v18-latin-700.woff2') format('woff2'),
+    url('../fonts/raleway/raleway-v18-latin-700.woff') format('woff'),
+    url('../fonts/raleway/raleway-v18-latin-700.ttf') format('truetype'),
+    url('../fonts/raleway/raleway-v18-latin-700.svg#Raleway') format('svg');
+}
+
+/* Делаем картинки блочными */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Палитра цветов */
@@ -29,7 +36,7 @@ body {
   background-color: var(--secondary-color);
   color: var(--main-color);
 
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -48,7 +55,7 @@ h6 {
 /* Логотип шапки*/
 .logo-head {
   color: var(--heading-color);
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -62,7 +69,7 @@ h6 {
 /* Логотип футера */
 .logo-foot {
   color: var(--secondary-color);
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
