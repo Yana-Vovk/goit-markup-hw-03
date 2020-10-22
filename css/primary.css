@@ -33,14 +33,17 @@ img {
 
 /* Задаём ширину остовного контейнера */
 .container {
-  /* width: 1170px; */
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid purple;
-  background-color: palegoldenrod;
+}
+
+/* Стиль хэдера */
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 /* Основные стили */
@@ -62,6 +65,8 @@ h4,
 h5,
 h6 {
   color: var(--heading-color);
+  margin: 0;
+  padding: 0;
 }
 
 /* Логотип шапки*/
@@ -80,6 +85,8 @@ h6 {
 
 /* Логотип футера */
 .logo-foot {
+  display: inline-block;
+  margin-bottom: 20px;
   color: var(--secondary-color);
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -96,6 +103,8 @@ h6 {
 /* Убрать маркировку списков */
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Стили для шапки */
@@ -130,6 +139,8 @@ h6 {
 /* Стили для подвала */
 .footer-box {
   background-color: var(--background);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .address {
@@ -146,6 +157,15 @@ h6 {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.footer-box .link {
+  display: inline-block;
+  margin-bottom: 9px;
+}
+
+.footer-box .last-link {
+  margin-bottom: 0px;
 }
 
 .address:hover,
