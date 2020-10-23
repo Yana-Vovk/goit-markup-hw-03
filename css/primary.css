@@ -153,19 +153,15 @@ h6 {
 
 /* Стили для адреса в футере */
 .footer-box .list {
+  display: inline-block;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
-.footer-box .link {
-  display: inline-block;
-  margin-bottom: 9px;
-}
-
-.footer-box .last-link {
-  margin-bottom: 0px;
+.footer-box .li-item + .li-item {
+  margin-top: 9px;
 }
 
 .address:hover,
