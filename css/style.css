@@ -126,21 +126,29 @@
   color: var(--secondary-color);
   background-color: var(--active-color);
   border: none;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.filter .list {
+  display: flex;
+  justify-content: center;
+}
+
+.filter .li-item + .li-item {
+  margin-left: 8px;
+}
 /* Стили для секции проекты */
-.projects {
-  background-color: palegreen;
-}
-.projects .li-item {
-  outline: 2px solid green;
-}
 
 .projects h3 {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 20px;
+  margin-bottom: 4px;
 }
 
 .projects p {
@@ -148,25 +156,26 @@
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
 
 .projects .list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
 }
 
 .projects .li-item {
-  margin-left: 30px;
-  margin-top: 30px;
-  /* flex-basis: calc(100% / 3 - 60px); */
+  width: calc((100% - 60px) / 3);
+  border: 1px solid var(--light-line);
 }
 
-/* .projects .li-item:not(:nth-child(3n)) {
+.projects .li-item:not(:nth-child(3n)) {
   margin-right: 30px;
-} */
+}
 
-/* .projects .li-item:not(:nth-last-child(-n + 3)) {
+.projects .li-item:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
-} */
+}

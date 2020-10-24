@@ -30,6 +30,7 @@ img {
   --background: #2f303a;
   --light-background: #f5f4fa;
   --line-header: #ececec;
+  --light-line: #eeeeee;
 }
 
 /* Типография */
@@ -42,6 +43,10 @@ h6 {
   color: var(--heading-color);
   margin: 0;
   padding: 0;
+}
+
+.invisible {
+  display: none;
 }
 
 /* Убрать подчёркивания у ссылок */
