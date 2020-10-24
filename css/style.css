@@ -2,6 +2,9 @@
 .hero {
   background-color: var(--background);
   text-align: center;
+  height: 600px;
+  display: flex;
+  align-items: center;
 }
 
 /* Внутренние отступы секций */
@@ -69,6 +72,15 @@
   margin-bottom: 0px;
 }
 
+.features .list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features .li-item {
+  flex-basis: calc(100% / 4 - 30px);
+}
+
 /* Стили для раздела наша команда */
 .team h3 {
   font-weight: 500;
@@ -117,6 +129,13 @@
 }
 
 /* Стили для секции проекты */
+.projects {
+  background-color: palegreen;
+}
+.projects .li-item {
+  outline: 2px solid green;
+}
+
 .projects h3 {
   font-weight: 700;
   font-size: 18px;
@@ -129,4 +148,21 @@
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+}
+
+.projects .list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects .li-item {
+  flex-basis: calc((100%-60px) / 3);
+}
+
+.projects .li-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.projects .li-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
 }
