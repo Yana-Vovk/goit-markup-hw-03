@@ -19,7 +19,7 @@
 
 /* Стиль перевого заголовка в герое */
 .hero h1 {
-  width: 696px;
+  max-width: 696px;
   margin-left: auto;
   margin-right: auto;
   color: var(--secondary-color);
@@ -72,22 +72,39 @@
   margin-bottom: 0px;
 }
 
+.features .li-item {
+  max-width: 270px;
+}
+
 .features .list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .features .li-item {
-  flex-basis: calc(100% / 4 - 30px);
+  width: calc((100% - 90px) / 4);
+}
+
+.features .li-item:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+
+.features .li-item:not(:nth-last-child(-n + 4)) {
+  margin-bottom: 30px;
 }
 
 /* Раздел чем мы занимаемся */
 .inside-section .list {
   display: flex;
+  flex-wrap: wrap;
 }
 
-.inside-section .li-item + .li-item {
-  margin-left: 30px;
+.inside-section .li-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.inside-section .li-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
 }
 
 /* Стили для раздела наша команда */
@@ -96,6 +113,8 @@
 }
 .team .list {
   display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .team .li-item {
@@ -103,10 +122,15 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  width: calc((100% - 90px) / 4);
 }
 
-.team .li-item + .li-item {
-  margin-left: 30px;
+.team .li-item:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+
+.team .li-item:not(:nth-last-child(-n + 4)) {
+  margin-bottom: 30px;
 }
 
 .team h3 {
@@ -131,6 +155,10 @@
 /* Стили для второй страницы - портфолио */
 
 /* Стили для списка кнопок фильтра */
+.filter {
+  margin-bottom: 50px;
+}
+
 .filter .button {
   display: inline-block;
   min-width: 73px;
@@ -147,10 +175,6 @@
   padding: 6px 22px;
 }
 
-.filter {
-  margin-bottom: 50px;
-}
-
 .filter .button:hover,
 .filter .button:focus {
   color: var(--secondary-color);
@@ -162,6 +186,7 @@
 
 .filter .list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
