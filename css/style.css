@@ -15,6 +15,7 @@
 
 .inside-section {
   margin-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* Стиль перевого заголовка в герое */
@@ -58,6 +59,11 @@
 }
 
 /* Стиль заголовкам раздела особенности */
+
+.features {
+  padding-top: 94px;
+}
+
 .features h3 {
   font-weight: 700;
   font-size: 14px;
